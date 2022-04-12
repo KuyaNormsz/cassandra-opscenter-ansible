@@ -9,7 +9,7 @@ getpid() {
  then
    PID=0
  else
-   set $RUNNING_APP
+   kill $RUNNING_APP
    PID=$1
  fi
 }
